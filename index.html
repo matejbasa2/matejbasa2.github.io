@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Possibilities — AI · 3D · Code</title>
+  <meta name="description" content="Quantum Possibilities specializes in local AI server setups, 3D printing, 3D modeling, and custom software development." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-q">Q</span>uantum<span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Local · Private · Powerful</div>
+      <h1 class="reveal">
+        Quantum<br />
+        <span class="gradient-text">Possibilities</span>
+      </h1>
+      <p class="hero-sub reveal">
+        We engineer the future — local AI infrastructure, precision 3D manufacturing,
+        and custom software tailored to your vision.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#contact" class="btn-ghost">Start a Project</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">What We Do</span>
+        <h2 class="reveal">Built for those who<br /><span class="gradient-text">refuse to settle</span></h2>
+        <p class="section-sub reveal">Four core disciplines, one unified partner.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 20h4M16 24h8M16 28h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="34" cy="24" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M34 19v-7M34 29v7M29 24h-7M39 24h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Local AI Servers</h3>
+          <p>Private, on-premise AI infrastructure. We design, build, and deploy local LLM servers — no cloud dependency, full data sovereignty.</p>
+          <ul class="card-features">
+            <li>LLM deployment (Ollama, vLLM)</li>
+            <li>Custom hardware configuration</li>
+            <li>API integration & fine-tuning</li>
+            <li>Network & security hardening</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L40 17V31L24 40L8 31V17L24 8Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 8V40M8 17L40 31M40 17L8 31" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>3D Printing</h3>
+          <p>From rapid prototypes to production-grade parts. We handle FDM, resin, and specialty materials for engineering and creative projects alike.</p>
+          <ul class="card-features">
+            <li>FDM & resin printing</li>
+            <li>Functional prototyping</li>
+            <li>Material consultation</li>
+            <li>Post-processing & finishing</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 38L24 10L38 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 30h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="10" r="3" fill="currentColor" opacity="0.5"/>
+              <path d="M6 38h36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>3D Modeling</h3>
+          <p>Precision CAD and artistic 3D models crafted for print-readiness, visualization, or game-ready assets. Every polygon with purpose.</p>
+          <ul class="card-features">
+            <li>CAD & parametric modeling</li>
+            <li>Product visualization</li>
+            <li>Game & VR assets</li>
+            <li>Print optimization</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 18L8 24L16 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M32 18L40 24L32 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 12L20 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Software Development</h3>
+          <p>Clean, performant code built to last. Web apps, automation scripts, AI integrations, and tooling crafted for real-world reliability.</p>
+          <ul class="card-features">
+            <li>Web & desktop apps</li>
+            <li>Automation & scripting</li>
+            <li>AI/ML integration</li>
+            <li>API design & development</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Local & Private</span>
+        </div>
+        <div class="stat reveal" data-delay="100">
+          <span class="stat-number" data-target="48">0</span><span class="stat-suffix">h</span>
+          <span class="stat-label">Avg. Prototype Turnaround</span>
+        </div>
+        <div class="stat reveal" data-delay="200">
+          <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Core Disciplines</span>
+        </div>
+        <div class="stat reveal" data-delay="300">
+          <span class="stat-number" data-target="0">0</span><span class="stat-suffix"> Cloud</span>
+          <span class="stat-label">Dependencies (AI)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-inner">
+      <div class="about-visual reveal">
+        <div class="about-orb"></div>
+        <div class="about-grid-art">
+          <div class="grid-node" style="--r:1;--c:2"></div>
+          <div class="grid-node" style="--r:1;--c:4"></div>
+          <div class="grid-node" style="--r:2;--c:1"></div>
+          <div class="grid-node" style="--r:2;--c:3"></div>
+          <div class="grid-node" style="--r:2;--c:5"></div>
+          <div class="grid-node" style="--r:3;--c:2"></div>
+          <div class="grid-node" style="--r:3;--c:4"></div>
+          <div class="grid-node active" style="--r:4;--c:1"></div>
+          <div class="grid-node" style="--r:4;--c:3"></div>
+          <div class="grid-node active" style="--r:4;--c:5"></div>
+          <div class="grid-node" style="--r:5;--c:2"></div>
+          <div class="grid-node active" style="--r:5;--c:4"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">About Us</span>
+        <h2 class="reveal">Technology that<br /><span class="gradient-text">stays with you</span></h2>
+        <p class="reveal">Quantum Possibilities was founded on a single belief: powerful technology shouldn't require surrendering your privacy or depending on someone else's infrastructure.</p>
+        <p class="reveal">We combine deep expertise across AI, additive manufacturing, and software engineering to deliver solutions that are entirely yours — running on your hardware, under your control.</p>
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <div>
+              <strong>Performance First</strong>
+              <p>Optimized hardware and software stacks, not just off-the-shelf defaults.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🔒</span>
+            <div>
+              <strong>Privacy by Design</strong>
+              <p>Your data never leaves your premises. We architect for zero-trust from day one.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🎯</span>
+            <div>
+              <strong>Precision Craftsmanship</strong>
+              <p>Every line of code and every print layer produced to exacting standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="reveal">Simple process,<br /><span class="gradient-text">exceptional results</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h3>Discover</h3>
+          <p>We listen to your goals, constraints, and vision. No generic solutions — we map out exactly what you need.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal" data-delay="100">
+          <div class="step-num">02</div>
+          <h3>Design</h3>
+          <p>Architecture, modeling, and planning — every detail refined before a single bolt is tightened or line written.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal" data-delay="200">
+          <div class="step-num">03</div>
+          <h3>Build</h3>
+          <p>Execution with precision. Hardware assembled, code written, models printed and tested against your requirements.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal" data-delay="300">
+          <div class="step-num">04</div>
+          <h3>Deliver</h3>
+          <p>Full handoff with documentation and support. You own everything — the code, the hardware, the knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-label reveal">Get in Touch</span>
+        <h2 class="reveal">Let's build something<br /><span class="gradient-text">extraordinary</span></h2>
+        <p class="reveal">Whether you have a detailed brief or just an idea — we're here to help shape it into reality.</p>
+        <div class="contact-details reveal">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <span>matej.basa2@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <span>quantumpossibilities.com</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">Select a service…</option>
+            <option value="ai">Local AI Server Setup</option>
+            <option value="printing">3D Printing</option>
+            <option value="modeling">3D Modeling</option>
+            <option value="software">Software Development</option>
+            <option value="multiple">Multiple Services</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <p class="form-note">We typically respond within 24 hours.</p>
+        <div class="form-success" id="form-success">
+          <span>✓</span> Message sent! We'll be in touch soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-q">Q</span>uantum<span class="logo-dot">.</span>
+        </a>
+        <p>Engineering the future,<br />on your terms.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Local AI Servers</a>
+          <a href="#services">3D Printing</a>
+          <a href="#services">3D Modeling</a>
+          <a href="#services">Software Dev</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Quantum Possibilities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
