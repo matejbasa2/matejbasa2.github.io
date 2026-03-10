@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Quantum Possibilities</title>
+  <meta name="description" content="Projects by Quantum Possibilities — local AI servers, 3D printing, 3D modeling, and software development." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-q">Q</span>uantum<span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn-nav">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html#services">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PORTFOLIO HERO -->
+  <section id="portfolio-hero">
+    <div class="portfolio-hero-bg"></div>
+    <div class="container portfolio-hero-content">
+      <span class="section-label reveal">Our Work</span>
+      <h1 class="reveal">Built with <span class="gradient-text">precision</span></h1>
+      <p class="reveal">A selection of projects across AI infrastructure, additive manufacturing, 3D design, and software engineering.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div id="filter-bar">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI Servers</button>
+        <button class="filter-btn" data-filter="printing">3D Printing</button>
+        <button class="filter-btn" data-filter="modeling">3D Modeling</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+      </div>
+      <span class="project-count"><span id="visible-count">10</span> projects</span>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <section id="portfolio-grid">
+    <div class="container">
+      <div class="gallery" id="gallery">
+
+        <!-- AI projects -->
+        <article class="project-card reveal" data-category="ai" data-delay="0">
+          <div class="project-img" style="--ph-a:#7c6dfa;--ph-b:#3b3a8a;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="20" width="48" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M20 28h8M20 32h16M20 36h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="44" cy="32" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M44 25v-9M44 39v9M37 32h-9M51 32h9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">AI Servers</span>
+                <h3>Local LLM Workstation</h3>
+                <p>Custom-built 8× GPU server running Llama 3 and Mistral locally for a law firm — fully air-gapped, zero cloud dependency.</p>
+                <button class="overlay-btn" data-project="0">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat ai">AI Servers</span>
+            <h3>Local LLM Workstation</h3>
+            <p>8× GPU server, Llama 3 + Mistral, air-gapped deployment</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="printing" data-delay="50">
+          <div class="project-img" style="--ph-a:#5eead4;--ph-b:#0f766e;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M16 44L32 12L48 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 36h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M24 28h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 44h44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><rect x="26" y="44" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">3D Printing</span>
+                <h3>Architectural Scale Models</h3>
+                <p>Series of 1:100 scale architectural models for a design studio, printed in multi-material PLA with painted finishes.</p>
+                <button class="overlay-btn" data-project="1">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat printing">3D Printing</span>
+            <h3>Architectural Scale Models</h3>
+            <p>Multi-material PLA, 1:100 scale, painted finish</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="modeling" data-delay="100">
+          <div class="project-img" style="--ph-a:#f472b6;--ph-b:#7c3aed;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M32 8L52 20V44L32 56L12 44V20L32 8Z" stroke="currentColor" stroke-width="2"/><path d="M32 8V56M12 20L52 44M52 20L12 44" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/><circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.3"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">3D Modeling</span>
+                <h3>Product Visualization Suite</h3>
+                <p>High-fidelity 3D models of industrial equipment for a manufacturing catalogue — print-ready and render-optimized.</p>
+                <button class="overlay-btn" data-project="2">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat modeling">3D Modeling</span>
+            <h3>Product Visualization Suite</h3>
+            <p>Industrial CAD, render-ready, 14 models</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="software" data-delay="150">
+          <div class="project-img" style="--ph-a:#fb923c;--ph-b:#92400e;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M20 24L10 32L20 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 24L54 32L44 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 16L28 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">Software</span>
+                <h3>Inventory Automation Platform</h3>
+                <p>Full-stack web app replacing a manual spreadsheet workflow for a warehouse — real-time sync, barcode scanning, and reporting.</p>
+                <button class="overlay-btn" data-project="3">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat software">Software</span>
+            <h3>Inventory Automation Platform</h3>
+            <p>Web app, barcode scanning, real-time sync</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai" data-delay="0">
+          <div class="project-img" style="--ph-a:#818cf8;--ph-b:#1e1b4b;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="32" cy="32" r="3" fill="currentColor"/><path d="M32 12V8M32 56v-4M12 32H8M56 32h-4M17.5 17.5l-3-3M49.5 49.5l-3-3M46.5 17.5l3-3M14.5 49.5l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">AI Servers</span>
+                <h3>Private RAG Pipeline</h3>
+                <p>Document retrieval system over 50k+ internal PDFs using local embeddings and a private vector database — no data ever leaves the network.</p>
+                <button class="overlay-btn" data-project="4">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat ai">AI Servers</span>
+            <h3>Private RAG Pipeline</h3>
+            <p>Local embeddings, 50k+ docs, private vector DB</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="printing" data-delay="50">
+          <div class="project-img" style="--ph-a:#2dd4bf;--ph-b:#134e4a;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="14" y="24" width="36" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M22 24V18a10 10 0 0120 0v6" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="34" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M32 34v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">3D Printing</span>
+                <h3>Custom Enclosure Parts</h3>
+                <p>Precision-fit PETG enclosure components for industrial sensors — tolerances under 0.2mm, UV-resistant coating applied.</p>
+                <button class="overlay-btn" data-project="5">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat printing">3D Printing</span>
+            <h3>Custom Enclosure Parts</h3>
+            <p>PETG, ±0.2mm tolerance, UV-resistant</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="modeling" data-delay="100">
+          <div class="project-img" style="--ph-a:#c084fc;--ph-b:#4c1d95;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M8 48l16-20 12 14 8-10 12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="46" cy="20" r="3" fill="currentColor" opacity="0.4"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">3D Modeling</span>
+                <h3>Game-Ready Environment Pack</h3>
+                <p>30-piece modular sci-fi environment asset pack — optimized for Unreal Engine 5, LODs included, under 50k tris per asset.</p>
+                <button class="overlay-btn" data-project="6">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat modeling">3D Modeling</span>
+            <h3>Game-Ready Environment Pack</h3>
+            <p>Unreal Engine 5, 30 assets, LODs included</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="software" data-delay="150">
+          <div class="project-img" style="--ph-a:#fbbf24;--ph-b:#78350f;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="36" y="8" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="8" y="36" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="36" y="36" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M28 18h8M18 28v8M46 28v8M28 46h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">Software</span>
+                <h3>3D Print Job Manager</h3>
+                <p>Internal dashboard for tracking print queue, material usage, and machine status across multiple printers — live WebSocket updates.</p>
+                <button class="overlay-btn" data-project="7">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat software">Software</span>
+            <h3>3D Print Job Manager</h3>
+            <p>Multi-printer dashboard, live WebSocket, material tracking</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai" data-delay="0">
+          <div class="project-img" style="--ph-a:#6366f1;--ph-b:#312e81;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="10" y="14" width="44" height="36" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 24h44" stroke="currentColor" stroke-width="1.5"/><path d="M20 32h6M20 38h10M36 32h8M38 38h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="34" cy="35" r="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">AI Servers</span>
+                <h3>AI-Assisted Code Review</h3>
+                <p>Self-hosted LLM integration into a dev team's GitLab CI pipeline — automated PR summaries and code smell detection, fully private.</p>
+                <button class="overlay-btn" data-project="8">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat ai">AI Servers</span>
+            <h3>AI-Assisted Code Review</h3>
+            <p>GitLab CI, self-hosted LLM, PR automation</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="modeling" data-delay="100">
+          <div class="project-img" style="--ph-a:#e879f9;--ph-b:#701a75;">
+            <div class="ph-content">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M32 10C20 10 10 20 10 32s10 22 22 22 22-10 22-22S44 10 32 10z" stroke="currentColor" stroke-width="2"/><path d="M32 10c-6 0-10 10-10 22s4 22 10 22 10-10 10-22-4-22-10-22z" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/><path d="M10 32h44M13 20h38M13 44h38" stroke="currentColor" stroke-width="1" opacity="0.4"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <span class="overlay-cat">3D Modeling</span>
+                <h3>Organic Character Sculpt</h3>
+                <p>High-poly character sculpt for a tabletop miniature series — 12M polygon base, retopologized and print-optimized for resin.</p>
+                <button class="overlay-btn" data-project="9">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat modeling">3D Modeling</span>
+            <h3>Organic Character Sculpt</h3>
+            <p>12M poly, resin-optimized, tabletop miniature</p>
+          </div>
+        </article>
+
+      </div><!-- /gallery -->
+
+      <div class="no-results" id="no-results">
+        <p>No projects in this category yet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section id="portfolio-cta">
+    <div class="container cta-inner">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p>We'd love to add it to this list.</p>
+      </div>
+      <a href="index.html#contact" class="btn-primary">Start a Conversation →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-q">Q</span>uantum<span class="logo-dot">.</span>
+        </a>
+        <p>Engineering the future,<br />on your terms.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="index.html#services">Local AI Servers</a>
+          <a href="index.html#services">3D Printing</a>
+          <a href="index.html#services">3D Modeling</a>
+          <a href="index.html#services">Software Dev</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html#about">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Quantum Possibilities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="lightbox-backdrop" id="lb-backdrop"></div>
+    <div class="lightbox-panel">
+      <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+      <div class="lb-img-wrap">
+        <div class="lb-img" id="lb-img"></div>
+      </div>
+      <div class="lb-body">
+        <span class="lb-cat" id="lb-cat"></span>
+        <h2 id="lb-title"></h2>
+        <p id="lb-desc"></p>
+        <div class="lb-tags" id="lb-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+  <script src="assets/portfolio.js"></script>
+</body>
+</html>
