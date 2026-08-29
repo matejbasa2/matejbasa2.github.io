@@ -1,5 +1,5 @@
 /* =============================================
-   QUANTUM POSSIBILITIES — MAIN JS
+   QUANTUM POSSIBILITIES - MAIN JS
    ============================================= */
 
 'use strict';
@@ -34,32 +34,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 reveals.forEach(el => revealObserver.observe(el));
-
-/* ----------- COUNTER ANIMATION ----------- */
-function animateCounter(el, target, duration = 1600) {
-  const start = performance.now();
-  const update = (now) => {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.round(ease * target);
-    if (progress < 1) requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-}
-
-const statNumbers = document.querySelectorAll('.stat-number');
-const statObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      animateCounter(el, parseInt(el.dataset.target, 10));
-      statObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-
-statNumbers.forEach(el => statObserver.observe(el));
 
 /* ----------- PARTICLE CANVAS ----------- */
 (function initParticles() {

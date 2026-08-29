@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quantum Possibilities — AI · 3D · Code</title>
-  <meta name="description" content="Quantum Possibilities specializes in local AI server setups, 3D printing, 3D modeling, and custom software development." />
+  <title>Quantum Possibilities | AI · 3D · Code</title>
+  <meta name="description" content="Quantum Possibilities builds AI systems: local and open-source LLM deployments, RAG and semantic search, token and cost optimization, plus 3D printing, 3D modeling, and custom software development." />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,8 +47,8 @@
         <span class="gradient-text">Possibilities</span>
       </h1>
       <p class="hero-sub reveal">
-        We engineer the future — local AI infrastructure, precision 3D manufacturing,
-        and custom software tailored to your vision.
+        We engineer the future with AI systems that run where you want them, precision 3D
+        manufacturing, and custom software tailored to your vision.
       </p>
       <div class="hero-cta reveal">
         <a href="#services" class="btn-primary">Explore Services</a>
@@ -66,10 +66,9 @@
       <div class="section-header">
         <span class="section-label reveal">What We Do</span>
         <h2 class="reveal">Built for those who<br /><span class="gradient-text">refuse to settle</span></h2>
-        <p class="section-sub reveal">Four core disciplines, one unified partner.</p>
+        <p class="section-sub reveal">AI, additive manufacturing, and software. One unified partner.</p>
       </div>
 
-      <div class="services-grid">
 
         <div class="service-card reveal" data-delay="0">
           <div class="card-glow"></div>
@@ -81,18 +80,64 @@
               <path d="M34 19v-7M34 29v7M29 24h-7M39 24h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Local AI Servers</h3>
-          <p>Private, on-premise AI infrastructure. We design, build, and deploy local LLM servers — no cloud dependency, full data sovereignty.</p>
+          <span class="card-tag">AI</span>
+          <h3>AI Systems &amp; Deployment</h3>
+          <p>LLM infrastructure built around your constraints: fully on-premise, cloud API, or a hybrid of both. Open-source models where they win, hosted models where they make sense.</p>
           <ul class="card-features">
-            <li>LLM deployment (Ollama, vLLM)</li>
-            <li>Custom hardware configuration</li>
-            <li>API integration & fine-tuning</li>
-            <li>Network & security hardening</li>
+            <li>Open-source model selection &amp; serving</li>
+            <li>Ollama, vLLM, llama.cpp deployments</li>
+            <li>100% local &amp; air-gapped as an option</li>
+            <li>Hardware sizing, hardening &amp; APIs</li>
           </ul>
           <a href="#contact" class="card-link">Learn more →</a>
         </div>
 
         <div class="service-card reveal" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M29 29l10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="16" cy="17" r="2" fill="currentColor"/>
+              <circle cx="24" cy="16" r="2" fill="currentColor"/>
+              <circle cx="19" cy="25" r="2" fill="currentColor"/>
+              <path d="M16 17l8-1M16 17l3 8M24 16l-5 9" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>
+            </svg>
+          </div>
+          <span class="card-tag">AI</span>
+          <h3>RAG &amp; Semantic Search</h3>
+          <p>Turn your documents, tickets, and databases into answers. We build retrieval pipelines that stay accurate as your data grows, and that you can actually measure.</p>
+          <ul class="card-features">
+            <li>Embeddings &amp; vector databases</li>
+            <li>Chunking, hybrid &amp; reranked retrieval</li>
+            <li>Document &amp; knowledge-base ingestion</li>
+            <li>Evaluation and accuracy tuning</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 34l8-9 7 5 9-13 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 12v28h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <circle cx="32" cy="17" r="2.5" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <span class="card-tag">AI</span>
+          <h3>Token &amp; Cost Optimization</h3>
+          <p>Same output, a fraction of the spend. We profile where your tokens actually go, then cut the waste with better context, caching, and the right model for each job.</p>
+          <ul class="card-features">
+            <li>Prompt &amp; context engineering</li>
+            <li>Prompt caching and batching</li>
+            <li>Model routing &amp; right-sizing</li>
+            <li>Usage tracking &amp; cost reporting</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal" data-delay="0">
           <div class="card-glow"></div>
           <div class="card-icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,15 +149,15 @@
           <h3>3D Printing</h3>
           <p>From rapid prototypes to production-grade parts. We handle FDM, resin, and specialty materials for engineering and creative projects alike.</p>
           <ul class="card-features">
-            <li>FDM & resin printing</li>
+            <li>FDM &amp; resin printing</li>
             <li>Functional prototyping</li>
             <li>Material consultation</li>
-            <li>Post-processing & finishing</li>
+            <li>Post-processing &amp; finishing</li>
           </ul>
           <a href="#contact" class="card-link">Learn more →</a>
         </div>
 
-        <div class="service-card reveal" data-delay="200">
+        <div class="service-card reveal" data-delay="100">
           <div class="card-glow"></div>
           <div class="card-icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,15 +170,15 @@
           <h3>3D Modeling</h3>
           <p>Precision CAD and artistic 3D models crafted for print-readiness, visualization, or game-ready assets. Every polygon with purpose.</p>
           <ul class="card-features">
-            <li>CAD & parametric modeling</li>
+            <li>CAD &amp; parametric modeling</li>
             <li>Product visualization</li>
-            <li>Game & VR assets</li>
+            <li>Game &amp; VR assets</li>
             <li>Print optimization</li>
           </ul>
           <a href="#contact" class="card-link">Learn more →</a>
         </div>
 
-        <div class="service-card reveal" data-delay="300">
+        <div class="service-card reveal" data-delay="200">
           <div class="card-glow"></div>
           <div class="card-icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,37 +190,12 @@
           <h3>Software Development</h3>
           <p>Clean, performant code built to last. Web apps, automation scripts, AI integrations, and tooling crafted for real-world reliability.</p>
           <ul class="card-features">
-            <li>Web & desktop apps</li>
-            <li>Automation & scripting</li>
+            <li>Web &amp; desktop apps</li>
+            <li>Automation &amp; scripting</li>
             <li>AI/ML integration</li>
-            <li>API design & development</li>
+            <li>API design &amp; development</li>
           </ul>
           <a href="#contact" class="card-link">Learn more →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat reveal">
-          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-          <span class="stat-label">Local & Private</span>
-        </div>
-        <div class="stat reveal" data-delay="100">
-          <span class="stat-number" data-target="48">0</span><span class="stat-suffix">h</span>
-          <span class="stat-label">Avg. Prototype Turnaround</span>
-        </div>
-        <div class="stat reveal" data-delay="200">
-          <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Core Disciplines</span>
-        </div>
-        <div class="stat reveal" data-delay="300">
-          <span class="stat-number" data-target="0">0</span><span class="stat-suffix"> Cloud</span>
-          <span class="stat-label">Dependencies (AI)</span>
         </div>
       </div>
     </div>
@@ -205,7 +225,7 @@
         <span class="section-label reveal">About Us</span>
         <h2 class="reveal">Technology that<br /><span class="gradient-text">stays with you</span></h2>
         <p class="reveal">Quantum Possibilities was founded on a single belief: powerful technology shouldn't require surrendering your privacy or depending on someone else's infrastructure.</p>
-        <p class="reveal">We combine deep expertise across AI, additive manufacturing, and software engineering to deliver solutions that are entirely yours — running on your hardware, under your control.</p>
+        <p class="reveal">We combine deep expertise across AI, additive manufacturing, and software engineering to deliver solutions that are entirely yours, from fully local, air-gapped deployments to lean, cost-optimized AI pipelines.</p>
         <div class="about-pillars reveal">
           <div class="pillar">
             <span class="pillar-icon">⚡</span>
@@ -218,7 +238,7 @@
             <span class="pillar-icon">🔒</span>
             <div>
               <strong>Privacy by Design</strong>
-              <p>Your data never leaves your premises. We architect for zero-trust from day one.</p>
+              <p>Local-first by default. When data has to travel, we architect for zero-trust from day one.</p>
             </div>
           </div>
           <div class="pillar">
@@ -244,13 +264,13 @@
         <div class="process-step reveal">
           <div class="step-num">01</div>
           <h3>Discover</h3>
-          <p>We listen to your goals, constraints, and vision. No generic solutions — we map out exactly what you need.</p>
+          <p>We listen to your goals, constraints, and vision. No generic solutions. We map out exactly what you need.</p>
         </div>
         <div class="process-connector"></div>
         <div class="process-step reveal" data-delay="100">
           <div class="step-num">02</div>
           <h3>Design</h3>
-          <p>Architecture, modeling, and planning — every detail refined before a single bolt is tightened or line written.</p>
+          <p>Architecture, modeling, and planning. Every detail refined before a single bolt is tightened or line written.</p>
         </div>
         <div class="process-connector"></div>
         <div class="process-step reveal" data-delay="200">
@@ -262,7 +282,7 @@
         <div class="process-step reveal" data-delay="300">
           <div class="step-num">04</div>
           <h3>Deliver</h3>
-          <p>Full handoff with documentation and support. You own everything — the code, the hardware, the knowledge.</p>
+          <p>Full handoff with documentation and support. You own everything: the code, the hardware, the knowledge.</p>
         </div>
       </div>
     </div>
@@ -274,7 +294,7 @@
       <div class="contact-info">
         <span class="section-label reveal">Get in Touch</span>
         <h2 class="reveal">Let's build something<br /><span class="gradient-text">extraordinary</span></h2>
-        <p class="reveal">Whether you have a detailed brief or just an idea — we're here to help shape it into reality.</p>
+        <p class="reveal">Whether you have a detailed brief or just an idea, we're here to help shape it into reality.</p>
         <div class="contact-details reveal">
           <div class="contact-item">
             <span class="contact-icon">
@@ -306,7 +326,9 @@
           <label for="service">Service of Interest</label>
           <select id="service" name="service">
             <option value="">Select a service…</option>
-            <option value="ai">Local AI Server Setup</option>
+            <option value="ai">AI Systems &amp; Deployment</option>
+            <option value="rag">RAG &amp; Semantic Search</option>
+            <option value="optimization">Token &amp; Cost Optimization</option>
             <option value="printing">3D Printing</option>
             <option value="modeling">3D Modeling</option>
             <option value="software">Software Development</option>
@@ -341,7 +363,9 @@
       <div class="footer-links">
         <div class="footer-col">
           <h4>Services</h4>
-          <a href="#services">Local AI Servers</a>
+          <a href="#services">AI Systems</a>
+          <a href="#services">RAG &amp; Search</a>
+          <a href="#services">Token Optimization</a>
           <a href="#services">3D Printing</a>
           <a href="#services">3D Modeling</a>
           <a href="#services">Software Dev</a>

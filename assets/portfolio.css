@@ -1,5 +1,5 @@
 /* =============================================
-   QUANTUM POSSIBILITIES — PORTFOLIO PAGE
+   QUANTUM POSSIBILITIES - PORTFOLIO PAGE
    ============================================= */
 
 /* ----------- ACTIVE NAV LINK ----------- */
@@ -97,7 +97,7 @@
 }
 .ph-content svg { width: 80px; height: 80px; color: #fff; }
 
-/* When a real image is supplied — add as background-image inline style */
+/* When a real image is supplied, add as background-image inline style */
 .project-img.has-photo { background: none; }
 .project-img.has-photo::before {
   content: ''; position: absolute; inset: 0;

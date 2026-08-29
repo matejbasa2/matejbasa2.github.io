@@ -1,5 +1,5 @@
 /* =============================================
-   QUANTUM POSSIBILITIES — PORTFOLIO JS
+   QUANTUM POSSIBILITIES - PORTFOLIO JS
    ============================================= */
 
 'use strict';
@@ -9,21 +9,21 @@ const projects = [
   {
     title: 'Local LLM Workstation',
     cat: 'AI Servers',
-    desc: 'Custom-built 8× GPU server running Llama 3 and Mistral locally for a law firm — fully air-gapped, zero cloud dependency. Handles 40+ concurrent queries with sub-2s response times on a private intranet.',
+    desc: 'Custom-built 8× GPU server running Llama 3 and Mistral locally for a law firm. Fully air-gapped, zero cloud dependency. Handles 40+ concurrent queries with sub-2s response times on a private intranet.',
     tags: ['Ollama', 'Llama 3', 'Mistral', 'Ubuntu Server', 'NVIDIA A100', 'Air-gapped'],
     gradient: 'linear-gradient(135deg, #7c6dfa 0%, #3b3a8a 100%)',
   },
   {
     title: 'Architectural Scale Models',
     cat: '3D Printing',
-    desc: 'Series of 1:100 scale architectural models for a design studio — printed in multi-material PLA, hand-painted with architectural acrylics. Used for client presentations and planning submissions.',
+    desc: 'Series of 1:100 scale architectural models for a design studio, printed in multi-material PLA, hand-painted with architectural acrylics. Used for client presentations and planning submissions.',
     tags: ['FDM', 'Multi-material PLA', '1:100 scale', 'Post-processing', 'Hand-painted'],
     gradient: 'linear-gradient(135deg, #5eead4 0%, #0f766e 100%)',
   },
   {
     title: 'Product Visualization Suite',
     cat: '3D Modeling',
-    desc: 'High-fidelity 3D models of industrial equipment for a manufacturing company\'s product catalogue. 14 models covering pumps, valves, and fittings — print-ready and render-optimized for Blender Cycles.',
+    desc: 'High-fidelity 3D models of industrial equipment for a manufacturing company\'s product catalogue. 14 models covering pumps, valves, and fittings, all print-ready and render-optimized for Blender Cycles.',
     tags: ['Blender', 'CAD', 'Cycles render', 'PBR materials', '14 models', 'Print-ready'],
     gradient: 'linear-gradient(135deg, #f472b6 0%, #7c3aed 100%)',
   },
@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Private RAG Pipeline',
     cat: 'AI Servers',
-    desc: 'Retrieval-augmented generation system over 50,000+ internal PDF documents for a financial services firm. Uses local sentence-transformers for embeddings, Qdrant as a vector database, and a self-hosted LLM as the inference backend — completely air-gapped.',
+    desc: 'Retrieval-augmented generation system over 50,000+ internal PDF documents for a financial services firm. Uses local sentence-transformers for embeddings, Qdrant as a vector database, and a self-hosted LLM as the inference backend. Completely air-gapped.',
     tags: ['RAG', 'Qdrant', 'sentence-transformers', 'vLLM', 'Python', 'Air-gapped'],
     gradient: 'linear-gradient(135deg, #818cf8 0%, #1e1b4b 100%)',
   },
@@ -65,7 +65,7 @@ const projects = [
   {
     title: 'AI-Assisted Code Review',
     cat: 'AI Servers',
-    desc: 'Self-hosted LLM integration into a software team\'s GitLab CI/CD pipeline. On every merge request, the system automatically generates a PR summary, flags potential code smells, and suggests test cases — all using a local Code Llama instance. Zero code leaves the network.',
+    desc: 'Self-hosted LLM integration into a software team\'s GitLab CI/CD pipeline. On every merge request, the system automatically generates a PR summary, flags potential code smells, and suggests test cases, all using a local Code Llama instance. Zero code leaves the network.',
     tags: ['GitLab CI', 'Code Llama', 'Python', 'REST API', 'Self-hosted', 'Air-gapped'],
     gradient: 'linear-gradient(135deg, #6366f1 0%, #312e81 100%)',
   },
