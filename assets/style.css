@@ -262,8 +262,57 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
 .card-link { margin-top: auto; align-self: flex-start; font-size: 0.875rem; font-weight: 600; color: var(--accent); transition: gap var(--transition); }
 .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
+/* ----------- CLIENTS ----------- */
+#clients { background: var(--bg); }
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2.25rem;
+}
+
+/* Light plate keeps client brand colors legible on the dark theme */
+.client-logo {
+  display: flex; align-items: center; justify-content: center;
+  height: 112px; padding: 1.5rem; margin-bottom: 1.5rem;
+  background: #f5f5fa; border-radius: var(--radius-sm);
+}
+.client-logo img { width: auto; height: auto; max-width: min(100%, 200px); max-height: 56px; }
+
+.client-card h3 { margin-bottom: 0.25rem; }
+.client-sector {
+  display: block; font-family: var(--mono); font-size: 0.72rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-3); margin-bottom: 1rem;
+}
+
+.client-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.client-tags span {
+  font-family: var(--mono); font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-2);
+  background: rgba(94,234,212,0.08); border: 1px solid rgba(94,234,212,0.22);
+  border-radius: 50px; padding: 0.25rem 0.6rem;
+}
+
+.client-cta {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 2rem;
+  border: 1px dashed rgba(124,109,250,0.35); border-radius: var(--radius);
+}
+.client-cta:hover { border-color: var(--accent); background: rgba(124,109,250,0.05); }
+.client-cta-icon {
+  width: 52px; height: 52px; display: flex; align-items: center; justify-content: center;
+  font-size: 1.75rem; font-weight: 300; line-height: 1; color: var(--accent);
+  background: rgba(124,109,250,0.1); border: 1px solid rgba(124,109,250,0.2);
+  border-radius: 50%; margin-bottom: 1.25rem;
+}
+.client-cta h3 { margin-bottom: 0.5rem; }
+.client-cta p { font-size: 0.9rem; max-width: 300px; margin-bottom: 1.5rem; }
+.client-cta .card-link { margin-top: 0; align-self: center; }
+.client-cta:hover .card-link { text-decoration: underline; text-underline-offset: 3px; }
+
 /* ----------- ABOUT ----------- */
-#about { background: var(--bg); }
+#about { background: var(--bg-2); }
 
 .about-inner {
   display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
@@ -316,7 +365,7 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
 .pillar p { font-size: 0.875rem; }
 
 /* ----------- PROCESS ----------- */
-#process { background: var(--bg-2); }
+#process { background: var(--bg); }
 
 .process-steps {
   display: grid;
@@ -366,7 +415,7 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
 }
 
 /* ----------- CONTACT ----------- */
-#contact { background: var(--bg); }
+#contact { background: var(--bg-2); }
 
 .contact-inner {
   display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start;
